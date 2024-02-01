@@ -1,0 +1,202 @@
+@use '../utils' as *;
+
+.tp-bt-btn.auth-icon-div {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 12px 17px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--tp-common-white);
+    font-family: "SourceSansProReg";
+
+    &:hover {
+        color: var(--tp-icon-green);
+    }
+}
+
+
+@media only screen and (max-width:1199px) and (min-width: 200px) {
+    .tp-bt-btn.auth-icon-div.mr.notificationIconnavbar {
+        display: inline-block;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px solid var(--tp-common-black) !important;
+        font-family: "SourceSansProReg";
+
+        &:hover {
+            color: var(--tp-icon-green);
+        }
+
+        & .fa-regular.fa-bell {
+            color: #000;
+
+        }
+    }
+}
+
+
+.tp-bt-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--tp-common-white);
+    font-family: "SourceSansProReg";
+
+    &:hover {
+        color: var(--tp-icon-green);
+    }
+
+    &.mr {
+        margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 1399px) and (min-width: 1199px) {
+        &.mr {
+            margin-right: 11px;
+        }
+    }
+
+    & span {
+        color: var(--tp-common-white);
+        text-transform: capitalize;
+        font-family: "SourceSansProReg";
+
+        &.upppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    // @media #{$xxl} {
+    //     padding: 20px 30px;
+    // }
+
+    // @media #{$xl} {
+    //     padding: 20px 15px;
+    // }
+
+    // @media #{$md} {
+    //     box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;
+    //     line-height: 1;
+    //     padding: 16px 25px 12px 25px;
+    // }
+}
+
+.tp-cta-btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 19px 46px;
+    border-radius: 5px;
+    background: var(--tp-icon-green);
+    color: var(--tp-common-white);
+
+    & span {
+        text-transform: uppercase;
+        color: var(--tp-common-white);
+        margin-left: 10px;
+        margin-right: 4px;
+    }
+
+    &:hover {
+        color: var(--tp-text-body);
+    }
+}
+
+.tp-btn,
+.tp-btn-second {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    padding: 25px 45px;
+    background-color: #7B1717;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: var(--tp-common-white);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @media #{$md,$xs} {
+        padding: 20px 40px;
+    }
+
+    @media(max-width:440px) {}
+
+    // &::after {
+    //     content: "";
+    //     height: 300px;
+    //     width: 300px;
+    //     background-color: #631313;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translateY(-50%) translateX(-50%) scale(0);
+    //     transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    //     z-index: -1;
+    // }
+
+    &:hover {
+        color: #fff;
+
+    }
+}
+
+.tp-btn {
+    @media #{$xs} {
+        margin-right: 5px;
+    }
+}
+
+.tp-btn-second {
+    background: var(--tp-icon-green);
+
+    @media #{$xs} {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    &::after {
+        content: "";
+        height: 300px;
+        width: 300px;
+        background-color: #13D9A8;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%) scale(0);
+        transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        z-index: -1;
+    }
+}
+
+.text-reset.class-off-cava-close-button {
+    position: relative;
+    top: 29px;
+
+    & .fa-sharp.fa-light.fa-xmark {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+
+        padding-top: -2px;
+        background: #7B1717;
+        border-radius: 20px;
+        font-size: 20px;
+        color: var(--tp-common-white);
+        font-weight: 800;
+    }
+}

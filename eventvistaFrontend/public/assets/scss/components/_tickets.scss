@@ -1,0 +1,210 @@
+@use '../utils' as *;
+@use "buttons";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.ticket {
+    margin: auto;
+    display: flex;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+}
+
+.ticket h2 {
+    font-size: 14px;
+}
+
+.left {
+    display: flex;
+}
+
+.image {
+    width: 250px;
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.95;
+}
+
+.admit-one {
+    position: absolute;
+    color: darkgray;
+    height: 250px;
+    padding: 0 10px;
+    letter-spacing: 0.15em;
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.admit-one span:nth-child(2) {
+    color: white;
+    font-weight: 700;
+}
+
+.left .ticket-number {
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    color: white;
+}
+
+.ticket-info {
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket::-webkit-scrollbar {
+    height: 7px;
+    background-color: #7b1717;
+    border-radius: 10px;
+}
+
+.date {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.date span:first-child {
+    text-align: left;
+    width: 100px;
+}
+
+.date span:last-child {
+    text-align: right;
+    width: 100px;
+}
+
+.date .nov-10 {
+    color: #d62839;
+    font-size: 20px;
+    width: 150px;
+}
+
+.show-name {
+    font-size: 20px;
+    color: #d62839;
+    font-weight: 700;
+}
+
+.show-name h1 {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    color: #93229f;
+    font-family: "Saira Stencil One", sans-serif;
+}
+.ticket.created-by-anniedotexe .tagline p
+{
+    font-family: var(--tp-ff-p);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--tp-primary);
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+.time {
+    color: #505050;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.time span {
+    font-weight: 400;
+    color: gray;
+}
+
+.left .time {
+    font-size: 16px;
+}
+
+.tagline {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+    font-weight: 700;
+}
+
+.location span:first-child {
+    text-align: left;
+}
+
+.location span:last-child {
+    text-align: right;
+}
+
+.location .separator {
+    font-size: 20px;
+}
+
+.right {
+    width: 225px;
+    border-left: 1px dashed #404040;
+}
+
+.right .admit-one {
+    color: darkgray;
+}
+
+.right .admit-one span:nth-child(2) {
+    color: #505050;
+}
+
+.right .right-info-container {
+    padding: 3px 6px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right .show-name h1 {
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+}
+
+.right .time {
+    margin-top: 10px;
+}
+
+
+.barcode img {
+    height: 94%;
+}
+
+.right .ticket-number {
+    color: #505050;
+    font-weight: 700;
+}

@@ -1,0 +1,234 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  18. FAQ CSS START
+/*----------------------------------------*/
+
+.col-lg-4.p-0.faq-left-sidebar-col.text-center.faqs-sidebar {
+    max-height: 253px !important;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+}
+
+@media only screen and (max-width: 400px) and (min-width: 200px)  {
+    .col-lg-4.p-0.faq-left-sidebar-col.text-center.faqs-sidebar {
+        max-height: 350px !important;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px)  {
+    .faq-accordion {
+        & .accordion-button {    
+            @media #{$md} {
+                font-size: 18px;
+            }
+    
+            @media #{$xs} {
+                padding: 20px 30px 20px 25px;
+                font-size: 16px;
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 45px;
+                transform: translateY(-50%);
+                background: none;
+                background-image: url('../../media/icons/dropdown-filled.svg');
+                background-size: cover;
+                /* Adjust the background size property based on your design */
+                display: inline-block;
+                font-family: "SourceSansProReg";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-right: 0px !important;
+    
+    
+                & .accordion-collapse.collapse.show {
+                    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width));
+                }
+    
+                @media #{$xs} {
+                    right: 15px;
+                }
+            }
+    
+            &.collapsed {
+                &::after {
+                    @include transition(.3s);
+                    content: '';
+                    background-image: url('../../media/icons/dropdown-filled-down.svg');
+                    background-size: cover;
+                    /* Adjust the background size property based on your design */
+                    color: var(--tp-common-black);
+                    margin-right: 0px !important;
+                }
+            }
+    
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }  
+}
+
+.faq-accordion {
+    margin: 0 15px;
+
+    @media #{$xs} {
+        margin: 0 0;
+    }
+
+
+    & .accordion-button {
+        background: none;
+        position: relative;
+        padding: 30px 75px 30px 35px;
+        color: var(--tp-common-black);
+        font-family: "xillian";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        box-shadow: inset 0 calc(-1 * 0);
+
+        @media #{$md} {
+            font-size: 18px;
+        }
+
+        @media #{$xs} {
+            padding: 20px 30px 20px 25px;
+            font-size: 16px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 45px;
+            transform: translateY(-50%);
+            background: none;
+            background-image: url('../../media/icons/dropdown-filled.svg');
+            background-size: cover;
+            /* Adjust the background size property based on your design */
+            display: inline-block;
+            font-family: "SourceSansProReg";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-right: -29px;
+
+
+            & .accordion-collapse.collapse.show {
+                box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width));
+            }
+
+            @media #{$xs} {
+                right: 15px;
+            }
+        }
+
+        &.collapsed {
+            &::after {
+                @include transition(.3s);
+                content: '';
+                background-image: url('../../media/icons/dropdown-filled-down.svg');
+                background-size: cover;
+                /* Adjust the background size property based on your design */
+                color: var(--tp-common-black);
+                margin-right: -29px;
+            }
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    & .accordion-items {
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);    
+        margin-bottom: 30px;
+
+        & .accordion-collapse {
+            margin-top: -27px !important;
+        }
+
+        // & .accordion-collapse.collapse.show
+        // {
+        //     margin-top: -27px !important;
+        // }
+
+
+    }
+
+    & .accordion-content {
+        // border-bottom: 4px solid var(--tp-theme-brown);
+        padding-top: 10px;
+
+        & p {
+            padding: 0 75px 28px 35px;
+            color: #7C7C7C;
+            font-family: "SourceSansProReg";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @media #{$xs} {
+                padding: 0 30px 35px 25px;
+                font-size: 14px;
+            }
+
+            & br {
+                @media #{$lg,$md,$xs} {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.Faq-sidebar {
+
+    & .faq-sidebar-heading {
+        text-align: left;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-bottom: 1px solid #DFDFDF;
+
+        & a {
+            color: var(--tp-common-black);
+            font-family: 'xillian';
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        & a.active {
+            color: #7B1717;
+            font-family: 'xillian';
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+    }
+
+    & .faq-sidebar-heading.last-child {
+        border-bottom: none !important;
+    }
+
+}

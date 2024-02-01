@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="dropdown-filled" clip-path="url(#clip0_1280_160)">
+<g id="Group">
+<path id="Vector" d="M0.772005 12.3848L15.2283 12.3848C15.9126 12.3848 16.2595 11.5598 15.7689 11.0691L8.54076 3.84101C8.24388 3.54414 7.75326 3.54414 7.45638 3.84101L0.228254 11.0691C-0.259245 11.5566 0.0876303 12.3848 0.772005 12.3848Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1280_160">
+<rect width="16" height="16" fill="white" transform="translate(16 16) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg>

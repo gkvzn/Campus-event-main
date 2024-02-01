@@ -1,0 +1,53 @@
+$font-url: 'https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Days+One&display=swap';
+
+// font family
+$font-family: (
+    ff: (body: "'SourceSansPro', sans-serif",
+        heading: "'xillian', sans-serif",
+        p: "'SourceSansPro', sans-serif",
+        fontawesome: '"Font Awesome 6 Pro"',
+    )
+);
+
+// font weight
+$font-scale: (
+    fw: (normal: normal,
+        elight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        sbold: 600,
+        bold: 700,
+        ebold: 800,
+        black: 900,
+    )
+);
+
+// font size
+$font-size: (
+    fz: (body: 15px,
+        p: 15px,
+        h1: 40px,
+        h2: 36px,
+        h3: 24px,
+        h4: 20px,
+        h5: 16px,
+        h6: 14px,
+    )
+);
+
+.SourceSansPro {
+    font-family: "SourceSansPro" !important;
+}
+
+.xillian {
+    font-family: "xillian" !important;
+}
+
+.SourceSansProReg {
+    font-family: "SourceSansProReg" !important;
+}
+
+.SourceSansProSmiBld {
+    font-family: "SourceSansProSmiBld" !important;
+}

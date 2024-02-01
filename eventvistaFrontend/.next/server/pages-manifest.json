@@ -1,0 +1,19 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html",
+  "/about-us": "pages/about-us.html",
+  "/account/profile": "pages/account/profile.html",
+  "/api/hello": "pages/api/hello.js",
+  "/calender": "pages/calender.html",
+  "/contact-us": "pages/contact-us.html",
+  "/events": "pages/events.html",
+  "/forget-password": "pages/forget-password.html",
+  "/": "pages/index.html",
+  "/signin": "pages/signin.html",
+  "/signup": "pages/signup.html",
+  "/_error": "pages/_error.js",
+  "/view-all-events": "pages/view-all-events.html",
+  "/wishlist": "pages/wishlist.html",
+  "/events/[id]/[slug]": "pages/events/[id]/[slug].js"
+}

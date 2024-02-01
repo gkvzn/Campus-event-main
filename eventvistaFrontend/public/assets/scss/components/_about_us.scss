@@ -1,0 +1,154 @@
+@use '../utils' as *;
+
+.about-us-p-description {
+    color: var(--tp-common-black) !important;
+    font-family: "SourceSansProReg";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    & p
+    {
+        color: var(--tp-common-black) !important;
+    }
+    & span{
+        color: var(--tp-common-black) !important;
+    }
+    & ul
+    {
+        & li
+        {
+            & span
+            {
+                color: var(--tp-common-black) !important;
+                list-style: disc;
+            }
+            color: var(--tp-common-black) !important;
+            list-style: disc;
+            margin-left: 30px;
+        }
+    }
+}
+
+.about-title-heading {
+    & h2 {
+        color: var(--tp-common-black);
+        font-family: "xillian";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.about-us-ul {
+    padding-left: 30px;
+
+    & li {
+        list-style-type: disc;
+        color: #7C7C7C;
+
+        & .about-us-li-p-description {
+            color: #7C7C7C;
+            font-family: "SourceSansProReg";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.contact-us-form-textarea {
+
+    width: 100% !important;
+    height: 102px !important;
+    border-radius: 5px !important;
+    border-radius: 10px !important;
+    border: 1px solid #B7B7B7;
+    background: #FFF;
+
+    & textarea {
+        width: 100% !important;
+        height: 100px !important;
+        padding-top: 10px;
+        border: 1px solid #EFF1F6 !important;
+        padding-left: 20px !important;
+        border-radius: 10px !important;
+    }
+
+    & textarea::placeholder {
+        color: #B7B7B7;
+        font-family: "SourceSansProReg";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.checkbox-form.contact-us-form {
+    border-radius: 10px !important;
+    background: #FFF !important;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+    padding: 30px !important;
+
+    .col-md-12.input-div {
+        margin-bottom: -5px !important;
+    }
+
+    & select {
+        padding-right: 30px;
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('../../media/icons/dow-arrow-icon.png');
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+    }
+
+    & select::-ms-expand {
+        display: none;
+    }
+    &
+    .checkout-form-list.create-acc
+    {
+        margin-bottom: 7px !important;
+    }
+
+    & input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+}
+
+.contactus-sidebar {
+    max-height: 299px;
+    padding-top: 24px;
+    padding-left: 14px;
+
+    & .icon {
+        & .contact-us-sidebar-heading {
+            color: var(--tp-comment-theme);
+            font-family: "xillian";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 3px;
+            text-align: left;
+        }
+
+        & .contact-us-sidebar-value {
+            color: #7C7C7C;
+            font-family: "SourceSansProReg";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: left;
+        }
+    }
+}
