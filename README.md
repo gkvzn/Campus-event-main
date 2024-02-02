@@ -1,3 +1,9 @@
+
+
+
+
+
+
 EventVista redefines event discovery, offering a personalized journey for every user. Seamlessly connect with a world of exciting moments tailored to your interests. Your go-to platform for vibrant experiences, EventVista ensures you never miss the events that matter. Elevate your social calendar and make every moment unforgettable with EventVista.
 
 
